@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192"><link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0a0a0f"><meta name="generator" content="Astro v7.2.3"><title>Circolo a Vapore — Yvan Bonci</title><meta name="description" content="Cinque giochi di carte e da tavolo in rete locale, con automi che riempiono i posti vuoti, chat al tavolo e carte disegnate in SVG. Scritto interamente da Claude."><link rel="canonical" href="https://xyvanb.github.io/projects/circolo-a-vapore/"><!-- Language alternates --><link rel="alternate" hreflang="it" href="https://xyvanb.github.io/projects/circolo-a-vapore/"><link rel="alternate" hreflang="en" href="https://xyvanb.github.io/en/projects/circolo-a-vapore/"><link rel="alternate" hreflang="x-default" href="https://xyvanb.github.io/projects/circolo-a-vapore/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="Circolo a Vapore — Yvan Bonci"><meta property="og:description" content="Cinque giochi di carte e da tavolo in rete locale, con automi che riempiono i posti vuoti, chat al tavolo e carte disegnate in SVG. Scritto interamente da Claude."><meta property="og:url" content="https://xyvanb.github.io/projects/circolo-a-vapore/"><meta property="og:image" content="https://xyvanb.github.io/images/projects/circolo-a-vapore/scelta-gioco.webp"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Circolo a Vapore — Yvan Bonci"><meta name="twitter:description" content="Cinque giochi di carte e da tavolo in rete locale, con automi che riempiono i posti vuoti, chat al tavolo e carte disegnate in SVG. Scritto interamente da Claude."><meta name="twitter:image" content="https://xyvanb.github.io/images/projects/circolo-a-vapore/scelta-gioco.webp"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.Sx5bM3k1.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/BaseLayout.SnCy86bo.css"><style>.prose-portfolio h2{color:#c9a84c;margin:2rem 0 .75rem;font-family:Cinzel,Georgia,serif;font-size:1.5rem}.prose-portfolio h3{color:#e8c97a;margin:1.5rem 0 .5rem;font-family:Cinzel,Georgia,serif;font-size:1.15rem}.prose-portfolio p{margin:.75rem 0}.prose-portfolio a{color:#c9a84c;text-decoration:underline}.prose-portfolio ul{margin:.75rem 0;padding-left:1.25rem;list-style:outside}.prose-portfolio code{background:#1a1a2e;border-radius:.25rem;padding:.1rem .35rem;font-size:.9em}.prose-portfolio img{border:1px solid #c9a84c26;border-radius:.25rem;width:100%;margin-top:1.5rem}.prose-portfolio img+em{color:#c8c8d8a6;margin-top:.5rem;font-size:.85rem;display:block}.shot-carousel{margin-top:1.5rem}.shot-scroller{scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;display:flex;overflow-x:auto}.shot-scroller::-webkit-scrollbar{display:none}.shot-scroller:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-slide{scroll-snap-align:start;flex:0 0 100%;min-width:100%;margin:0}.shot-frame{aspect-ratio:16/10;background:#12121e;border:1px solid #c9a84c26;border-radius:.25rem;justify-content:center;align-items:center;display:flex;overflow:hidden}.prose-portfolio .shot-frame img{object-fit:contain;border:0;border-radius:0;width:100%;height:100%;margin:0}.prose-portfolio .shot-slide figcaption{text-align:center;color:#c8c8d8a6;margin-top:.5rem;padding:0 .5rem;font-size:.85rem;font-style:italic}.shot-controls{justify-content:center;align-items:center;gap:1rem;margin-top:.75rem;display:flex}.shot-btn{color:#c9a84c;cursor:pointer;background:0 0;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.25rem;line-height:1;transition:background-color .15s,opacity .15s;display:grid}.shot-btn:hover:not(:disabled){background:#c9a84c1a}.shot-btn:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-btn:disabled{opacity:.35;cursor:default}.shot-counter{text-align:center;font-variant-numeric:tabular-nums;color:#c8c8d8a6;min-width:3.5rem;font-size:.85rem}.shot-zoom{cursor:zoom-in;background:0 0;border:0;width:100%;height:100%;padding:0;display:block}.shot-zoom:focus-visible{outline-offset:-2px;outline:2px solid #c9a84c}.shot-lightbox{background:0 0;border:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0}.shot-lightbox::backdrop{background:#0a0a0ff0}.shot-lightbox[open]{place-items:center;display:grid}.prose-portfolio .shot-lb-figure{flex-direction:column;align-items:center;gap:.75rem;max-width:min(94vw,1600px);margin:0;display:flex}.prose-portfolio .shot-lb-figure img{object-fit:contain;border:1px solid #c9a84c40;border-radius:.25rem;width:auto;max-width:100%;max-height:80dvh;margin:0}.prose-portfolio .shot-lb-figure figcaption{text-align:center;color:#c8c8d8cc;margin:0;padding:0 1rem;font-size:.9rem;font-style:italic}.shot-lb-counter{font-variant-numeric:tabular-nums;color:#c8c8d8b3;font-size:.85rem;position:fixed;top:1.25rem;left:50%;transform:translate(-50%)}.shot-lightbox .shot-btn{background:#1a1a2eb3;position:fixed;top:50%;transform:translateY(-50%)}.shot-lb-prev{left:1rem}.shot-lb-next{right:1rem}.shot-lb-close{color:#c9a84c;cursor:pointer;background:#1a1a2eb3;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.4rem;line-height:1;display:grid;position:fixed;top:1rem;right:1rem}.shot-lb-close:hover{background:#c9a84c26}.shot-lb-close:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}
+</style><style>[data-astro-transition-scope="astro-dxhjaawt-1"] { view-transition-name: project-title-it_2fcircolo-a-vapore; }@layer astro { ::view-transition-old(project-title-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-title-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-title-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-title-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-y7cd7uxa-2"] { view-transition-name: project-image-it_2fcircolo-a-vapore; }@layer astro { ::view-transition-old(project-image-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-image-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-image-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-image-it_2fcircolo-a-vapore) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen bg-void font-body text-mist antialiased selection:bg-gold/30"><a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-stone focus:px-4 focus:py-2 focus:text-gold focus:outline-hidden focus:ring-2 focus:ring-gold">Vai al contenuto</a><header class="sticky top-0 z-40 w-full border-b border-gold/20 bg-void/80 backdrop-blur"><nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"><a href="/" class="flex items-center gap-2.5 font-display text-lg tracking-wide text-gold"><span class="logo-mark " aria-hidden="true" data-astro-cid-f7espo7c><img src="/images/logo.png" alt="" width="34" height="34" data-astro-cid-f7espo7c></span>Yvan Bonci</a><!-- Desktop links --><ul class="hidden items-center gap-8 font-body text-sm sm:flex"><li><a href="/" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Progetti</a></li><li><a href="/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contatti</a></li><li><a href="/en/projects/circolo-a-vapore/" hreflang="en" aria-label="Switch to English" title="Switch to English" class="rounded border border-gold/40 px-2 py-1 font-display text-xs tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">EN</a></li></ul><!-- Mobile hamburger --><button id="nav-toggle" type="button" class="sm:hidden text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button></nav></header><!-- Mobile full-screen menu — kept outside <header> so its `fixed inset-0`
+     resolves against the viewport, not the header's backdrop-filter box. --><div id="mobile-menu" class="invisible fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-void/95 opacity-0 backdrop-blur-md transition-opacity duration-300 sm:hidden" aria-hidden="true"><button id="nav-close" type="button" class="absolute right-5 top-5 text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Chiudi menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg></button><ul class="flex flex-col items-center gap-8 font-display text-2xl"><li><a href="/" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Progetti</a></li><li><a href="/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contatti</a></li><li><a href="/en/projects/circolo-a-vapore/" hreflang="en" aria-label="Switch to English" class="rounded border border-gold/40 px-4 py-1.5 text-base tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">EN</a></li></ul></div><script type="module">function e(){let e=document.getElementById(`nav-toggle`),t=document.getElementById(`nav-close`),n=document.getElementById(`mobile-menu`);if(!e||!n)return;let r=()=>{n.classList.remove(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`false`),e.setAttribute(`aria-expanded`,`true`),document.body.style.overflow=`hidden`},i=()=>{n.classList.add(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`true`),e.setAttribute(`aria-expanded`,`false`),document.body.style.overflow=``};e.addEventListener(`click`,r),t?.addEventListener(`click`,i),n.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,i)),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&i()})}document.addEventListener(`astro:page-load`,e);</script><main id="main"><article class="mx-auto max-w-3xl px-6 py-16"><a href="/projects" class="link-underline mb-8 inline-block font-body text-sm text-gold/70 hover:text-gold">← Tutti i progetti</a><h1 data-astro-transition-scope="astro-dxhjaawt-1" class="font-display text-4xl text-gold sm:text-5xl">Circolo a Vapore</h1><p class="mt-4 font-body text-lg text-mist">Un circolo del gioco che vive su una porta di localhost: briscola, scala 40, machiavelli, sette e mezzo e scale e serpenti, aperti dal browser di chiunque sia sulla stessa Wi-Fi. I posti liberi li occupano gli automi, ogni tavolo ha la sua chat e le carte sono disegnate a mano in SVG dentro il progetto. È stato scritto interamente da Claude: io ci ho messo soltanto le idee.</p><div class="mt-6 flex flex-wrap gap-2"><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Node.js</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Express</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Socket.IO</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>JavaScript</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>SVG</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>HTML</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>CSS</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Claude Code</span></div><div class="mt-8 flex flex-wrap gap-4"></div><img data-astro-transition-scope="astro-y7cd7uxa-2" src="/images/projects/circolo-a-vapore/scelta-gioco.webp" alt="Screenshot di Circolo a Vapore" class="mt-12 w-full rounded border border-gold/15"><!-- Long-form markdown body, if present --><div class="prose-portfolio mt-12 font-body leading-relaxed text-mist/90"><h2 id="i-cinque-giochi">I cinque giochi</h2>
+<p>Dentro al Circolo ci sono cinque tavoli, ognuno con le sue regole e la sua
+interfaccia:</p>
+<ul>
+<li><strong>Briscola</strong>, da 2 a 5 giocatori: in due, tre e cinque ognuno per sé, in
+quattro a coppie con il dirimpettaio. Con tre giocatori si toglie un 2 dal
+mazzo, come da tradizione. I punti presi si scoprono solo a fine partita —
+e sono nascosti anche lato server, così non si può sbirciare.</li>
+<li><strong>Scala 40</strong>, da 2 a 6, con le regole del regolamento FISCA: apertura a 40
+punti, attacchi ai giochi di tutti, sostituzione del jolly, eliminazione a
+101.</li>
+<li><strong>Machiavelli</strong>, da 2 a 5: si può riordinare liberamente tutto il tavolo —
+spezzare scale, rubare una carta a un poker per farne un altro — lavorando
+su una bozza che gli altri vedono soltanto quando la confermi.</li>
+<li><strong>Sette e mezzo</strong>, da 2 a 6: c’è il banco, ci sono i gettoni virtuali, la
+matta (il re di denari) da valutare a piacere e il quattro da bruciare.</li>
+<li><strong>Scale e Serpenti</strong>, da 2 a 6: tabellone di 100 caselle disegnato in SVG,
+scale a pioli in ottone che salgono e serpentine di vapore in rame che
+scendono.</li>
+</ul>
+<p><img src="/images/projects/circolo-a-vapore/briscola.webp" alt="Tavolo di briscola in quattro con le carte giocate al centro">
+<em>Briscola in quattro, a coppie: il compagno è il dirimpettaio, la briscola sta accanto al tallone e le mani prese si contano sotto ogni giocatore.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/scala40.webp" alt="Tavolo di scala 40 con i giochi calati">
+<em>Scala 40: i giochi calati sul tavolo, col jolly etichettato dalla carta che sta sostituendo.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/machiavelli.webp" alt="Tavolo di machiavelli con quattro giochi e la mano in basso">
+<em>Machiavelli: i contatori in alto dicono quante carte hai calato e quanti giochi restano da sistemare, i bordi tratteggiati sono i gruppi toccati nella bozza.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/sette-e-mezzo.webp" alt="Tavolo di sette e mezzo con il banco e la fila delle puntate">
+<em>Sette e mezzo: il banco, i gettoni di tutti e la fila delle puntate; la prima carta la vedi solo tu.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/scale-serpenti.webp" alt="Tabellone di scale e serpenti con le pedine e il dado">
+<em>Scale e Serpenti: cento caselle disegnate in SVG, con le posizioni di tutti, il dado e il diario degli ultimi tiri.</em></p>
+<h2 id="che-cosa-sa-fare">Che cosa sa fare</h2>
+<p><strong>Si gioca in casa, sulla stessa Wi-Fi.</strong> Si avvia il server su un computer e
+tutti gli altri — telefoni, tablet, altri PC — aprono un indirizzo nel
+browser. Niente da installare, niente account, nessun servizio esterno di
+mezzo: il tavolo è la rete di casa.</p>
+<p><strong>Gli automi riempiono i posti vuoti.</strong> Si può creare un tavolo per sei e
+avviare la partita da soli: i posti liberi li prendono i bot. Se qualcuno si
+disconnette a partita avviata il suo posto non salta, un automa subentra e
+gioca al posto suo; chi torna rientra dalla lobby con lo stesso nome e si
+riprende le sue carte.</p>
+<p><strong>Tre livelli di bravura, diversi in ogni gioco.</strong> Novizio, Consueto e
+Maestro si scelgono quando si crea il tavolo, e ogni gioco ha le sue manopole:
+a briscola cambia quanto l’automa si distrae e da quanti punti in su gli
+conviene prendere; a scala 40 se vede la sostituzione del jolly; a sette e
+mezzo quanto è temerario nel chiedere carta con sei in mano. Il livello non
+tocca mai le regole: un Novizio gioca male, ma gioca legale.</p>
+<p><strong>Ogni tavolo ha la sua chat.</strong> I messaggi compaiono anche come nuvolette
+accanto a chi li scrive, rivolte verso il centro del tavolo, e in corsivo
+scorrono gli annunci di chi entra, chi esce e chi si scollega. Sul telefono la
+chat è un cassetto che si apre col 💬, con il contatore dei messaggi non
+letti.</p>
+<p><strong>Le carte sono disegnate nel progetto.</strong> Quaranta carte italiane, i mazzi
+francesi con e senza jolly, e il tabellone di scale e serpenti: tutto in SVG
+scritto a mano, nessuna immagine scaricata da fuori. C’è anche una galleria
+che mostra i mazzi carta per carta.</p>
+<p><strong>Il server è l’unico arbitro.</strong> I client mandano azioni e ricevono lo stato
+filtrato per il loro posto: le carte degli avversari non escono mai dal
+server, e una mossa non valida viene rifiutata con un messaggio senza toccare
+la partita.</p>
+<p><strong>Le regole sono testate a macchina.</strong> Una suite di simulazioni fa giocare gli
+automi fra loro — mille e duecento partite di briscola, mani e mani di scala
+40 e di machiavelli — e controlla che le carte non si perdano né si
+duplichino, che le partite finiscano sempre e che nessun automa provi mai una
+mossa illegale. Un test end-to-end fa lo stesso contro il server vero, con
+tanto di disconnessione e rientro.</p>
+<p><img src="/images/projects/circolo-a-vapore/lobby.webp" alt="Lobby con la creazione del tavolo e i livelli degli automi">
+<em>La lobby: numero di giocatori, bravura degli automi con le tre descrizioni a confronto e l’indirizzo da passare a chi è sulla stessa Wi-Fi.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/sala-attesa.webp" alt="Sala d’attesa con i posti liberi che diventeranno automi">
+<em>La sala d’attesa: i posti rimasti liberi diventano automi appena si avvia la partita.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/chat.webp" alt="Nuvoletta di chat accanto al giocatore durante una partita">
+<em>La chat del tavolo: ogni messaggio compare per qualche secondo anche come nuvoletta accanto a chi lo ha scritto.</em></p>
+<p><img src="/images/projects/circolo-a-vapore/galleria.webp" alt="Galleria delle quaranta carte italiane">
+<em>La galleria: i mazzi carta per carta, tutti disegnati in SVG dentro il progetto.</em></p>
+<h2 id="tecnologie-usate">Tecnologie usate</h2>
+<p>Server <strong>Node.js</strong> con <strong>Express</strong> per i file statici e <strong>Socket.IO</strong> per il
+tempo reale: tavoli, turni, automi e chat vivono tutti nello stesso processo.
+Il client è <strong>JavaScript</strong> senza framework e senza passo di build — HTML, CSS
+e qualche file di script serviti così come sono — con il tema steampunk
+scritto a mano in CSS, comprese le regole per il telefono. Le carte e il
+tabellone sono <strong>SVG</strong> generati da codice.</p>
+<p>Il dettaglio che mi piace di più è che i motori delle regole sono file unici,
+usati sia dal server sia dal browser: il client può dire subito perché una
+combinazione non è valida, e non esiste il rischio che client e server la
+pensino diversamente.</p>
+<h2 id="lha-scritto-claude-dallinizio-alla-fine">L’ha scritto Claude, dall’inizio alla fine</h2>
+<p>Non ho scritto una riga di questo progetto. Il codice — motori delle regole,
+euristiche degli automi, interfaccia, carte in SVG, test — l’ha scritto tutto
+<strong>Claude</strong>, con Claude Code. Io ci ho messo le idee: quali giochi aggiungere,
+come dovevano comportarsi gli automi, che aspetto doveva avere il tavolo, che
+cosa non funzionava dopo averci giocato una sera. Il resto è stato una lunga
+conversazione, un gioco alla volta.</p>
+</div></article></main><footer class="mt-24 border-t border-gold/20"><div class="mx-auto flex max-w-5xl flex-col items-center gap-2 px-6 py-10 text-center font-body text-sm text-faded"><p>&copy; 2026 Yvan Bonci. Realizzato con Astro.</p></div></footer></body></html><script type="module" src="/_astro/ProjectLayout.astro_astro_type_script_index_0_lang.BxkjvisS.js"></script>
