@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192"><link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0a0a0f"><meta name="generator" content="Astro v7.2.3"><title>POS Receipt — Yvan Bonci</title><meta name="description" content="Cassa e magazzino per le feste di paese: scontrino sulla termica e disponibilità della cucina che si aggiornano a ogni ordine."><link rel="canonical" href="https://xyvanb.github.io/projects/pos-receipt/"><!-- Language alternates --><link rel="alternate" hreflang="it" href="https://xyvanb.github.io/projects/pos-receipt/"><link rel="alternate" hreflang="en" href="https://xyvanb.github.io/en/projects/pos-receipt/"><link rel="alternate" hreflang="x-default" href="https://xyvanb.github.io/projects/pos-receipt/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="POS Receipt — Yvan Bonci"><meta property="og:description" content="Cassa e magazzino per le feste di paese: scontrino sulla termica e disponibilità della cucina che si aggiornano a ogni ordine."><meta property="og:url" content="https://xyvanb.github.io/projects/pos-receipt/"><meta property="og:image" content="https://xyvanb.github.io/images/projects/pos-receipt/home.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="POS Receipt — Yvan Bonci"><meta name="twitter:description" content="Cassa e magazzino per le feste di paese: scontrino sulla termica e disponibilità della cucina che si aggiornano a ogni ordine."><meta name="twitter:image" content="https://xyvanb.github.io/images/projects/pos-receipt/home.png"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.Sx5bM3k1.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/BaseLayout.SnCy86bo.css"><style>.prose-portfolio h2{color:#c9a84c;margin:2rem 0 .75rem;font-family:Cinzel,Georgia,serif;font-size:1.5rem}.prose-portfolio h3{color:#e8c97a;margin:1.5rem 0 .5rem;font-family:Cinzel,Georgia,serif;font-size:1.15rem}.prose-portfolio p{margin:.75rem 0}.prose-portfolio a{color:#c9a84c;text-decoration:underline}.prose-portfolio ul{margin:.75rem 0;padding-left:1.25rem;list-style:outside}.prose-portfolio code{background:#1a1a2e;border-radius:.25rem;padding:.1rem .35rem;font-size:.9em}.prose-portfolio img{border:1px solid #c9a84c26;border-radius:.25rem;width:100%;margin-top:1.5rem}.prose-portfolio img+em{color:#c8c8d8a6;margin-top:.5rem;font-size:.85rem;display:block}.shot-carousel{margin-top:1.5rem}.shot-scroller{scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;display:flex;overflow-x:auto}.shot-scroller::-webkit-scrollbar{display:none}.shot-scroller:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-slide{scroll-snap-align:start;flex:0 0 100%;min-width:100%;margin:0}.shot-frame{aspect-ratio:16/10;background:#12121e;border:1px solid #c9a84c26;border-radius:.25rem;justify-content:center;align-items:center;display:flex;overflow:hidden}.prose-portfolio .shot-frame img{object-fit:contain;border:0;border-radius:0;width:100%;height:100%;margin:0}.prose-portfolio .shot-slide figcaption{text-align:center;color:#c8c8d8a6;margin-top:.5rem;padding:0 .5rem;font-size:.85rem;font-style:italic}.shot-controls{justify-content:center;align-items:center;gap:1rem;margin-top:.75rem;display:flex}.shot-btn{color:#c9a84c;cursor:pointer;background:0 0;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.25rem;line-height:1;transition:background-color .15s,opacity .15s;display:grid}.shot-btn:hover:not(:disabled){background:#c9a84c1a}.shot-btn:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-btn:disabled{opacity:.35;cursor:default}.shot-counter{text-align:center;font-variant-numeric:tabular-nums;color:#c8c8d8a6;min-width:3.5rem;font-size:.85rem}.shot-zoom{cursor:zoom-in;background:0 0;border:0;width:100%;height:100%;padding:0;display:block}.shot-zoom:focus-visible{outline-offset:-2px;outline:2px solid #c9a84c}.shot-lightbox{background:0 0;border:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0}.shot-lightbox::backdrop{background:#0a0a0ff0}.shot-lightbox[open]{place-items:center;display:grid}.prose-portfolio .shot-lb-figure{flex-direction:column;align-items:center;gap:.75rem;max-width:min(94vw,1600px);margin:0;display:flex}.prose-portfolio .shot-lb-figure img{object-fit:contain;border:1px solid #c9a84c40;border-radius:.25rem;width:auto;max-width:100%;max-height:80dvh;margin:0}.prose-portfolio .shot-lb-figure figcaption{text-align:center;color:#c8c8d8cc;margin:0;padding:0 1rem;font-size:.9rem;font-style:italic}.shot-lb-counter{font-variant-numeric:tabular-nums;color:#c8c8d8b3;font-size:.85rem;position:fixed;top:1.25rem;left:50%;transform:translate(-50%)}.shot-lightbox .shot-btn{background:#1a1a2eb3;position:fixed;top:50%;transform:translateY(-50%)}.shot-lb-prev{left:1rem}.shot-lb-next{right:1rem}.shot-lb-close{color:#c9a84c;cursor:pointer;background:#1a1a2eb3;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.4rem;line-height:1;display:grid;position:fixed;top:1rem;right:1rem}.shot-lb-close:hover{background:#c9a84c26}.shot-lb-close:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}
+</style><style>[data-astro-transition-scope="astro-dxhjaawt-1"] { view-transition-name: project-title-it_2fpos-receipt; }@layer astro { ::view-transition-old(project-title-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-title-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-title-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-title-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-y7cd7uxa-2"] { view-transition-name: project-image-it_2fpos-receipt; }@layer astro { ::view-transition-old(project-image-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-image-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-image-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-image-it_2fpos-receipt) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen bg-void font-body text-mist antialiased selection:bg-gold/30"><a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-stone focus:px-4 focus:py-2 focus:text-gold focus:outline-hidden focus:ring-2 focus:ring-gold">Vai al contenuto</a><header class="sticky top-0 z-40 w-full border-b border-gold/20 bg-void/80 backdrop-blur"><nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"><a href="/" class="flex items-center gap-2.5 font-display text-lg tracking-wide text-gold"><span class="logo-mark " aria-hidden="true" data-astro-cid-f7espo7c><img src="/images/logo.png" alt="" width="34" height="34" data-astro-cid-f7espo7c></span>Yvan Bonci</a><!-- Desktop links --><ul class="hidden items-center gap-8 font-body text-sm sm:flex"><li><a href="/" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Progetti</a></li><li><a href="/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contatti</a></li><li><a href="/en/projects/pos-receipt/" hreflang="en" aria-label="Switch to English" title="Switch to English" class="rounded border border-gold/40 px-2 py-1 font-display text-xs tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">EN</a></li></ul><!-- Mobile hamburger --><button id="nav-toggle" type="button" class="sm:hidden text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button></nav></header><!-- Mobile full-screen menu — kept outside <header> so its `fixed inset-0`
+     resolves against the viewport, not the header's backdrop-filter box. --><div id="mobile-menu" class="invisible fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-void/95 opacity-0 backdrop-blur-md transition-opacity duration-300 sm:hidden" aria-hidden="true"><button id="nav-close" type="button" class="absolute right-5 top-5 text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Chiudi menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg></button><ul class="flex flex-col items-center gap-8 font-display text-2xl"><li><a href="/" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Progetti</a></li><li><a href="/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contatti</a></li><li><a href="/en/projects/pos-receipt/" hreflang="en" aria-label="Switch to English" class="rounded border border-gold/40 px-4 py-1.5 text-base tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">EN</a></li></ul></div><script type="module">function e(){let e=document.getElementById(`nav-toggle`),t=document.getElementById(`nav-close`),n=document.getElementById(`mobile-menu`);if(!e||!n)return;let r=()=>{n.classList.remove(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`false`),e.setAttribute(`aria-expanded`,`true`),document.body.style.overflow=`hidden`},i=()=>{n.classList.add(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`true`),e.setAttribute(`aria-expanded`,`false`),document.body.style.overflow=``};e.addEventListener(`click`,r),t?.addEventListener(`click`,i),n.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,i)),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&i()})}document.addEventListener(`astro:page-load`,e);</script><main id="main"><article class="mx-auto max-w-3xl px-6 py-16"><a href="/projects" class="link-underline mb-8 inline-block font-body text-sm text-gold/70 hover:text-gold">← Tutti i progetti</a><h1 data-astro-transition-scope="astro-dxhjaawt-1" class="font-display text-4xl text-gold sm:text-5xl">POS Receipt</h1><p class="mt-4 font-body text-lg text-mist">Un POS leggero che alcune associazioni del paese in cui vivo usano durante le sagre. Si compone l&#39;ordine dal menu, si stampa lo scontrino da 51 mm con le comande per la cucina e per il bar, e le scorte scalano da sole: in cassa e in cucina si sa sempre cosa è ancora disponibile. Backend Flask con API REST su MySQL, frontend in un unico file HTML senza framework né build, tutto in rete locale.</p><div class="mt-6 flex flex-wrap gap-2"><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Python</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Flask</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>MySQL</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Vanilla JS</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>REST API</span></div><div class="mt-8 flex flex-wrap gap-4"></div><img data-astro-transition-scope="astro-y7cd7uxa-2" src="/images/projects/pos-receipt/home.png" alt="Screenshot di POS Receipt" class="mt-12 w-full rounded border border-gold/15"><!-- Long-form markdown body, if present --><div class="prose-portfolio mt-12 font-body leading-relaxed text-mist/90"><h2 id="cosa-fa">Cosa fa</h2>
+<p>Questo non è nato per risolvere un problema: è semplicemente il programma che
+alcune associazioni del paese in cui vivo usano come registratore di cassa e
+magazzino durante le feste. Alla cassa si prende l’ordine, si stampa lo
+scontrino e si va avanti; in cucina interessa una cosa sola, sapere in tempo
+reale quante porzioni restano di ciascun piatto. Il resto del programma esiste
+per tenere insieme queste due cose.</p>
+<p>L’interfaccia è divisa in cinque schede — <strong>Ordini</strong>, <strong>Magazzino</strong>,
+<strong>Statistiche</strong>, <strong>Scontrini</strong> e <strong>Impostazioni</strong> — e si usa da un PC alla
+cassa, oppure da un tablet in sala collegato allo stesso server.</p>
+<h2 id="come-funziona">Come funziona</h2>
+<p>Il giro di un ordine è tutto qui. Si scelgono i prodotti dal menu, si indicano
+i coperti ed eventualmente il nome del cliente e una nota, poi si passa al
+riepilogo: lì compaiono subtotale, coperto calcolato sul numero di persone e
+totale, e c’è ancora modo di correggere una quantità o togliere una riga prima
+di confermare. Alla conferma, in un’unica transazione il backend registra lo
+scontrino con le sue righe e scala le scorte dei prodotti ordinati. Da quel
+momento il magazzino è aggiornato per tutti: chi guarda la scheda <strong>Magazzino</strong>
+da un altro dispositivo vede le stesse quantità.</p>
+<p>Poi c’è la stampa, che è la parte che mi piace di più. Quello che esce dalla
+<strong>termica da 51 mm</strong> non è un foglietto solo: il primo è lo scontrino per il
+cliente, con il riepilogo e il totale, e a seguire c’è una comanda separata per
+ogni reparto coinvolto — il cameriere per il cibo, il bar per le bevande, il
+bar per i caffè. Ogni comanda riporta soltanto le righe di sua competenza e
+viene stampata solo se l’ordine contiene qualcosa di quella categoria: un giro
+di sole birre non produce comande per la cucina. Sono tutte sulla stessa
+striscia, separate dai tratteggi su cui si strappa, e la pagina è impostata con
+larghezza fissa e altezza automatica, così esce della lunghezza giusta senza
+sprecare carta.</p>
+<p>Ogni scontrino resta consultabile, ricercabile per nome cliente e ristampabile
+dalla scheda dedicata; se viene eliminato — un ordine sbagliato, un cliente che
+cambia idea — le quantità tornano in magazzino, perché la cancellazione fa
+l’operazione inversa e riaccredita le scorte.</p>
+<p>Il <strong>Magazzino</strong> gestisce i prodotti: prezzo, giacenza, categoria, creazione e
+cancellazione. L’ordine con cui compaiono nel menu si cambia trascinandoli, il
+che sembra un dettaglio ma alla cassa conta parecchio: i piatti più richiesti
+si vogliono in cima, e cambia da una festa all’altra. Le <strong>Statistiche</strong> danno
+il riepilogo di incassi, coperti e pietanze vendute — anche questo stampabile,
+utile a fine serata — con la possibilità di azzerare tutto prima dell’evento
+successivo. Nelle <strong>Impostazioni</strong> si mettono nome, indirizzo, data dell’evento
+e prezzo del coperto, cioè quello che finisce in testa allo scontrino, e si
+gestiscono categorie e prodotti.</p>
+<h2 id="comè-fatto">Com’è fatto</h2>
+<p>Il backend è <strong>Python</strong> con <strong>Flask</strong>: una API REST su <strong>MySQL</strong> e poco più di
+una dozzina di endpoint, con le operazioni delicate — creazione ed eliminazione
+di uno scontrino — chiuse dentro una transazione, in modo che scorte e righe
+d’ordine non possano mai restare disallineate. Lo schema è quattro tabelle più
+le impostazioni, con vincoli di chiave esterna che impediscono di cancellare un
+prodotto già finito su uno scontrino.</p>
+<p>Il frontend è deliberatamente spartano: <strong>un solo file HTML</strong> con dentro CSS e
+JavaScript, nessun framework, nessuna build, nessuna dipendenza da scaricare.
+Si apre in un browser e funziona. È una scelta presa guardando dove gira
+davvero — un portatile prestato, sotto un tendone, spesso senza connessione — e
+dove l’unica cosa che conta è che la sera della festa si accenda e parta. Su
+Windows c’è un <code>.bat</code> che avvia backend e frontend e apre la pagina: doppio
+clic e si lavora. Gli altri dispositivi puntano all’IP locale del server e
+vedono gli stessi dati.</p>
+<h2 id="screenshot">Screenshot</h2>
+<p><img src="/images/projects/pos-receipt/order-summary.webp" alt="Riepilogo dell’ordine prima della conferma">
+<em>Riepilogo: subtotale, coperto calcolato sulle persone e totale, ancora modificabile.</em></p>
+<p><img src="/images/projects/pos-receipt/receipt.webp" alt="Scontrino cliente e comande per cucina e bar">
+<em>Stampa: lo scontrino del cliente e una comanda per ogni reparto coinvolto.</em></p>
+<p><img src="/images/projects/pos-receipt/warehouse.webp" alt="Gestione del magazzino con scorte e priorità">
+<em>Magazzino: prezzi e giacenze modificabili al volo, ordine del menu trascinabile.</em></p>
+<p><img src="/images/projects/pos-receipt/statistics.webp" alt="Statistiche della serata">
+<em>Statistiche: incassi, coperti e pietanze vendute, azzerabili a fine evento.</em></p>
+<p><img src="/images/projects/pos-receipt/receipts.webp" alt="Lista degli scontrini con ristampa">
+<em>Scontrini: ricerca per cliente, ristampa e annullamento con ripristino delle scorte.</em></p>
+<p><img src="/images/projects/pos-receipt/settings.webp" alt="Impostazioni dell’evento, categorie e prodotti">
+<em>Impostazioni: intestazione dello scontrino, prezzo del coperto, categorie e prodotti.</em></p>
+</div></article></main><footer class="mt-24 border-t border-gold/20"><div class="mx-auto flex max-w-5xl flex-col items-center gap-2 px-6 py-10 text-center font-body text-sm text-faded"><p>&copy; 2026 Yvan Bonci. Realizzato con Astro.</p></div></footer></body></html><script type="module" src="/_astro/ProjectLayout.astro_astro_type_script_index_0_lang.BxkjvisS.js"></script>
