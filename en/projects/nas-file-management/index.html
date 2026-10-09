@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192"><link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0a0a0f"><meta name="generator" content="Astro v7.2.3"><title>NAS File Management — Yvan Bonci</title><meta name="description" content="A fast web interface for the company NAS, with users, groups, per-file permissions and version history."><link rel="canonical" href="https://xyvanb.github.io/en/projects/nas-file-management/"><!-- Language alternates --><link rel="alternate" hreflang="it" href="https://xyvanb.github.io/projects/nas-file-management/"><link rel="alternate" hreflang="en" href="https://xyvanb.github.io/en/projects/nas-file-management/"><link rel="alternate" hreflang="x-default" href="https://xyvanb.github.io/projects/nas-file-management/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="NAS File Management — Yvan Bonci"><meta property="og:description" content="A fast web interface for the company NAS, with users, groups, per-file permissions and version history."><meta property="og:url" content="https://xyvanb.github.io/en/projects/nas-file-management/"><meta property="og:image" content="https://xyvanb.github.io/images/projects/nas-file-management/home.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="NAS File Management — Yvan Bonci"><meta name="twitter:description" content="A fast web interface for the company NAS, with users, groups, per-file permissions and version history."><meta name="twitter:image" content="https://xyvanb.github.io/images/projects/nas-file-management/home.png"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.Sx5bM3k1.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/BaseLayout.SnCy86bo.css"><style>.prose-portfolio h2{color:#c9a84c;margin:2rem 0 .75rem;font-family:Cinzel,Georgia,serif;font-size:1.5rem}.prose-portfolio h3{color:#e8c97a;margin:1.5rem 0 .5rem;font-family:Cinzel,Georgia,serif;font-size:1.15rem}.prose-portfolio p{margin:.75rem 0}.prose-portfolio a{color:#c9a84c;text-decoration:underline}.prose-portfolio ul{margin:.75rem 0;padding-left:1.25rem;list-style:outside}.prose-portfolio code{background:#1a1a2e;border-radius:.25rem;padding:.1rem .35rem;font-size:.9em}.prose-portfolio img{border:1px solid #c9a84c26;border-radius:.25rem;width:100%;margin-top:1.5rem}.prose-portfolio img+em{color:#c8c8d8a6;margin-top:.5rem;font-size:.85rem;display:block}.shot-carousel{margin-top:1.5rem}.shot-scroller{scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;display:flex;overflow-x:auto}.shot-scroller::-webkit-scrollbar{display:none}.shot-scroller:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-slide{scroll-snap-align:start;flex:0 0 100%;min-width:100%;margin:0}.shot-frame{aspect-ratio:16/10;background:#12121e;border:1px solid #c9a84c26;border-radius:.25rem;justify-content:center;align-items:center;display:flex;overflow:hidden}.prose-portfolio .shot-frame img{object-fit:contain;border:0;border-radius:0;width:100%;height:100%;margin:0}.prose-portfolio .shot-slide figcaption{text-align:center;color:#c8c8d8a6;margin-top:.5rem;padding:0 .5rem;font-size:.85rem;font-style:italic}.shot-controls{justify-content:center;align-items:center;gap:1rem;margin-top:.75rem;display:flex}.shot-btn{color:#c9a84c;cursor:pointer;background:0 0;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.25rem;line-height:1;transition:background-color .15s,opacity .15s;display:grid}.shot-btn:hover:not(:disabled){background:#c9a84c1a}.shot-btn:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}.shot-btn:disabled{opacity:.35;cursor:default}.shot-counter{text-align:center;font-variant-numeric:tabular-nums;color:#c8c8d8a6;min-width:3.5rem;font-size:.85rem}.shot-zoom{cursor:zoom-in;background:0 0;border:0;width:100%;height:100%;padding:0;display:block}.shot-zoom:focus-visible{outline-offset:-2px;outline:2px solid #c9a84c}.shot-lightbox{background:0 0;border:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0}.shot-lightbox::backdrop{background:#0a0a0ff0}.shot-lightbox[open]{place-items:center;display:grid}.prose-portfolio .shot-lb-figure{flex-direction:column;align-items:center;gap:.75rem;max-width:min(94vw,1600px);margin:0;display:flex}.prose-portfolio .shot-lb-figure img{object-fit:contain;border:1px solid #c9a84c40;border-radius:.25rem;width:auto;max-width:100%;max-height:80dvh;margin:0}.prose-portfolio .shot-lb-figure figcaption{text-align:center;color:#c8c8d8cc;margin:0;padding:0 1rem;font-size:.9rem;font-style:italic}.shot-lb-counter{font-variant-numeric:tabular-nums;color:#c8c8d8b3;font-size:.85rem;position:fixed;top:1.25rem;left:50%;transform:translate(-50%)}.shot-lightbox .shot-btn{background:#1a1a2eb3;position:fixed;top:50%;transform:translateY(-50%)}.shot-lb-prev{left:1rem}.shot-lb-next{right:1rem}.shot-lb-close{color:#c9a84c;cursor:pointer;background:#1a1a2eb3;border:1px solid #c9a84c4d;border-radius:9999px;place-items:center;width:2.25rem;height:2.25rem;font-size:1.4rem;line-height:1;display:grid;position:fixed;top:1rem;right:1rem}.shot-lb-close:hover{background:#c9a84c26}.shot-lb-close:focus-visible{outline-offset:2px;outline:2px solid #c9a84c}
+</style><style>[data-astro-transition-scope="astro-dxhjaawt-1"] { view-transition-name: project-title-en_2fnas-file-management; }@layer astro { ::view-transition-old(project-title-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-title-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-title-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-title-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-dxhjaawt-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-dxhjaawt-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-y7cd7uxa-2"] { view-transition-name: project-image-en_2fnas-file-management; }@layer astro { ::view-transition-old(project-image-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(project-image-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(project-image-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(project-image-en_2fnas-file-management) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-y7cd7uxa-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-y7cd7uxa-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen bg-void font-body text-mist antialiased selection:bg-gold/30"><a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-stone focus:px-4 focus:py-2 focus:text-gold focus:outline-hidden focus:ring-2 focus:ring-gold">Skip to content</a><header class="sticky top-0 z-40 w-full border-b border-gold/20 bg-void/80 backdrop-blur"><nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"><a href="/en" class="flex items-center gap-2.5 font-display text-lg tracking-wide text-gold"><span class="logo-mark " aria-hidden="true" data-astro-cid-f7espo7c><img src="/images/logo.png" alt="" width="34" height="34" data-astro-cid-f7espo7c></span>Yvan Bonci</a><!-- Desktop links --><ul class="hidden items-center gap-8 font-body text-sm sm:flex"><li><a href="/en" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/en/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Projects</a></li><li><a href="/en/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/en#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contact</a></li><li><a href="/projects/nas-file-management/" hreflang="it" aria-label="Switch to Italian" title="Switch to Italian" class="rounded border border-gold/40 px-2 py-1 font-display text-xs tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">IT</a></li></ul><!-- Mobile hamburger --><button id="nav-toggle" type="button" class="sm:hidden text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button></nav></header><!-- Mobile full-screen menu — kept outside <header> so its `fixed inset-0`
+     resolves against the viewport, not the header's backdrop-filter box. --><div id="mobile-menu" class="invisible fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-void/95 opacity-0 backdrop-blur-md transition-opacity duration-300 sm:hidden" aria-hidden="true"><button id="nav-close" type="button" class="absolute right-5 top-5 text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold rounded p-1" aria-label="Close menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg></button><ul class="flex flex-col items-center gap-8 font-display text-2xl"><li><a href="/en" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Home</a></li><li><a href="/en/projects" aria-current="page" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Projects</a></li><li><a href="/en/blog" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Blog</a></li><li><a href="/en#contact" class="link-underline text-mist transition-colors hover:text-gold aria-[current=page]:text-gold focus-visible:outline-hidden focus-visible:text-gold">Contact</a></li><li><a href="/projects/nas-file-management/" hreflang="it" aria-label="Switch to Italian" class="rounded border border-gold/40 px-4 py-1.5 text-base tracking-wider text-gold/80 transition-colors hover:border-gold hover:text-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-gold">IT</a></li></ul></div><script type="module">function e(){let e=document.getElementById(`nav-toggle`),t=document.getElementById(`nav-close`),n=document.getElementById(`mobile-menu`);if(!e||!n)return;let r=()=>{n.classList.remove(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`false`),e.setAttribute(`aria-expanded`,`true`),document.body.style.overflow=`hidden`},i=()=>{n.classList.add(`invisible`,`opacity-0`),n.setAttribute(`aria-hidden`,`true`),e.setAttribute(`aria-expanded`,`false`),document.body.style.overflow=``};e.addEventListener(`click`,r),t?.addEventListener(`click`,i),n.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,i)),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&i()})}document.addEventListener(`astro:page-load`,e);</script><main id="main"><article class="mx-auto max-w-3xl px-6 py-16"><a href="/en/projects" class="link-underline mb-8 inline-block font-body text-sm text-gold/70 hover:text-gold">← All projects</a><h1 data-astro-transition-scope="astro-dxhjaawt-1" class="font-display text-4xl text-gold sm:text-5xl">NAS File Management</h1><p class="mt-4 font-body text-lg text-mist">A web app that sits on top of the NAS, either a local folder or an SMB share, and makes it pleasant to use: folder browsing, drag-and-drop uploads, in-browser previews of PDF, Word and Excel files. Every user sees only the files they can access, with read, write and delete permissions per user or per group, and every upload keeps the previous version of the file. Node.js backend with Express and MySQL, React frontend with Material UI.</p><div class="mt-6 flex flex-wrap gap-2"><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Node.js</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Express</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>MySQL</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Sequelize</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>SMB</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>React</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Material UI</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>React Query</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>JWT</span><span class="inline-flex items-center gap-2 rounded border border-gold/20 bg-stone px-3 py-1.5 font-body text-sm text-mist"><span class="h-1.5 w-1.5 rotate-45 bg-gold/70" aria-hidden="true"></span>Jest</span></div><div class="mt-8 flex flex-wrap gap-4"></div><img data-astro-transition-scope="astro-y7cd7uxa-2" src="/images/projects/nas-file-management/home.png" alt="Screenshot of NAS File Management" class="mt-12 w-full rounded border border-gold/15"><section class="bracket-card-4 mt-12 p-8"><h2 class="mb-3 font-display text-xl text-gold">Challenge I solved</h2><p class="font-body leading-relaxed text-mist/90">A NAS thinks in shared folders, but we needed to hide a single file inside a folder everyone else can see. I built permissions as a chain: if a file or folder has explicit permissions, only those count; otherwise the check walks up to the parent, and the group&#39;s default permissions sit at the end of the chain. Every file listing goes through this check, so a restricted file isn&#39;t just blocked: for anyone without access it simply doesn&#39;t exist. When a folder is moved, the permissions of everything inside it follow it to the new path.</p></section><!-- Long-form markdown body, if present --><div class="prose-portfolio mt-12 font-body leading-relaxed text-mist/90"><h2 id="why-i-built-it">Why I built it</h2>
+<p>When we had to choose between a NAS and the cloud, I was looking for a middle
+ground: something that kept our files in-house without giving up the
+convenience of an online service. The NAS on its own wasn’t enough: its
+interface was slow, and it couldn’t assign specific roles or make a file
+visible only to certain people.</p>
+<p>That’s how NAS File Management came about: a fast web interface that works
+directly on the NAS’s files and adds what was missing, namely users, groups
+and permissions down to the single file, plus a version history so you can
+get back an earlier copy of any document at any time.</p>
+<p>The screenshots come from a local install with test data: a made-up company
+with HR, Finance, Marketing and IT folders.</p>
+<h2 id="permissions-and-visibility">Permissions and visibility</h2>
+<p>Every file and folder can have <strong>read</strong>, <strong>write</strong> and <strong>delete</strong>
+permissions, granted to a single user or to a group. Folders created through
+the app copy their parent’s permissions, and an “Inherit from parent folder”
+checkbox breaks the chain when needed. That way the Finance folder can hold a
+note visible only to the accounting group, even though the rest of the folder
+is shared more widely.</p>
+<p>Admins see everything; a regular user sees only what their permissions allow,
+and the R, W and D badges next to every item tell them at a glance what they
+can do with it. Accounts can be deactivated without deleting them, and groups
+can carry admin privileges too.</p>
+<h2 id="file-versions">File versions</h2>
+<p>When you upload a file that already exists, the old one isn’t overwritten: it
+moves into an <code>old version</code> folder next to the original, right on the NAS,
+and the server keeps a backup copy along with its SHA-256 checksum. Each
+version has a number, author, date and an optional comment, and can be
+downloaded at any time from the file’s properties.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="/images/projects/nas-file-management/root.webp" alt="The root folder as seen by an admin">
+<em>The NAS root as seen by an admin: every folder, with read, write and delete.</em></p>
+<p><img src="/images/projects/nas-file-management/user-view.webp" alt="The same folder as seen by a Marketing user">
+<em>The same root as seen by a Marketing user: Finance and HR don’t show up, and IT is read-only.</em></p>
+<p><img src="/images/projects/nas-file-management/versions.webp" alt="A file’s version history">
+<em>A file’s version history, with a comment and a download for every revision.</em></p>
+<p><img src="/images/projects/nas-file-management/permissions.webp" alt="Managing a file’s permissions">
+<em>The permissions of a single file: visible only to the Finance group (Amministrazione).</em></p>
+<p><img src="/images/projects/nas-file-management/viewer.webp" alt="Previewing an Excel file in the browser">
+<em>Previewing an Excel file right in the browser, without downloading it.</em></p>
+<p><img src="/images/projects/nas-file-management/users.webp" alt="User management">
+<em>User management, with roles, status and last login.</em></p>
+<p><img src="/images/projects/nas-file-management/groups.webp" alt="Group management">
+<em>Groups, each with its own default permissions.</em></p>
+<p><img src="/images/projects/nas-file-management/dashboard.webp" alt="The dashboard">
+<em>The dashboard: files, folders, users, storage used and recent activity.</em></p>
+<h2 id="tech-stack">Tech stack</h2>
+<p>The project is a monorepo with separate backend and frontend. The backend is
+a <strong>Node.js</strong> API with <strong>Express</strong>, <strong>JWT</strong> authentication, rate limiting and
+Helmet; users, groups, permissions and versions live in <strong>MySQL</strong> through
+<strong>Sequelize</strong>. A dedicated service abstracts the storage: a single
+environment variable switches from a local folder, handy for development, to
+the real NAS reached over <strong>SMB</strong>. A setup script scans the existing folders
+and catalogs them, so the app starts from whatever is already on the NAS.</p>
+<p>The frontend is a <strong>React 18</strong> app with <strong>Material UI</strong> and <strong>React Query</strong>:
+list or grid view, search, breadcrumbs, multi-file drag-and-drop uploads,
+copy, cut and paste with keyboard shortcuts too, and a viewer that opens
+PDFs, Word documents, Excel sheets, images and text files without leaving the
+page. The backend tests are written with <strong>Jest</strong> and Supertest.</p>
+</div></article></main><footer class="mt-24 border-t border-gold/20"><div class="mx-auto flex max-w-5xl flex-col items-center gap-2 px-6 py-10 text-center font-body text-sm text-faded"><p>&copy; 2026 Yvan Bonci. Built with Astro.</p></div></footer></body></html><script type="module" src="/_astro/ProjectLayout.astro_astro_type_script_index_0_lang.BxkjvisS.js"></script>
